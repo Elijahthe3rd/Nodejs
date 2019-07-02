@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Task 2: Request handling (basic routing, post, form,
+        middleware)</title>
+
+    <link rel="stylesheet" href="FormDesign.css">
+
+</head>
+
+<body style="background-color:rgb(78, 216, 151)">
+
+    <h1 style="text-align:center; color:rgb(180, 74, 42)">Travel Authorization Form</h1>
+    <br>
+
+    <h2 style="color:rgb(5, 49, 51)">Section A: Client Information</h2>
+
+    <br>
+    <hr class='Hr'>
+
+
+    <br>
+    <br>
+
+
+    <br>
+    <form action="/form" method="POST">
+        <!--for thml element adjustments
+                &nbsp;
+                &nbsp; 
+            -->
+
+        <label
+            for='title'>Title:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' placeholder="Title" id="title" name='title' dir="rtl">
+        <br>
+        <br>
+
+        <label class='firstName'>First name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' placeholder="First name" id="firstname" name='firstname' style="Text-align:center;">
+        <br>
+        <br>
+        <label class='MidIntial'>Middle initial:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' placeholder="Middle name initial" id="midintial" name='midinitial'
+            style="Text-align:center;">
+        <br>
+        <br>
+        <label class='lastName'>Last Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' placeholder="Last name" id="lastname" name='lastname' style="Text-align:center;">
+        <br>
+        <br>
+        <label class='emial'>Email Address:</label>&nbsp;&nbsp;&nbsp;
+        <input type='email' placeholder="Email Address" id="email" name='email' dir='rtl'>
+
+        <br>
+        <br>
+        <label class='Phonenumber'>Phone Number:</label>&nbsp;&nbsp;
+        <input type='text' placeholder="eg:(+27)-72-514-1101 " dir='rtl' id="phone" name='phone'>
+        <br>
+        <br>
+
+        <h2 style="text-align:left; color: rgb(3, 61, 53)">Section B: Travel Information</h2>
+        <hr class='Hr'>
+        <br>
+        <br>
+        <label for='airline'>Airline name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' placeholder="Airline name" id='airlinename' name='airlinename' style="Text-align:center;">
+        <br>
+        <br>
+        <label class='Destination'>Destination:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' size="" placeholder="your Destination" id="destination" style="Text-align:center;"
+            name='desination'>
+        <br>
+        <br>
+        <label for='leaveDate'>Leave Date:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='date' placeholder="" id="leavedate" name='leavedate'>
+        <br>
+        <br>
+        <label for='ReturnDate'>Return Date:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='date' placeholder="26/12/2019" id="returnDate" name='returnDate'>
+
+        <br>
+        <br>
+        <label for='estcost'>Estimated Cost:</label>&nbsp;
+        <input type='text' placeholder="$ / R " dir='ltr' id="estcost" name='estcost'>
+        <br>
+        <br>
+        <br>
+        <h3 style="text-align:center">Additional Estimated Expenses:</h3>
+        <br>
+        <br>
+        <label for='carRental'>Car Rental:</label>&nbsp;&nbsp;&nbsp;
+        <input type='text' placeholder=" " id="carRental" name='carRental' style="Text-align:center;">
+        <br>
+        <br>
+        <label class='Hotel'>Hotel:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' size="" placeholder="Hotel" id="hotel" name='hotel' style="Text-align:center;">
+        <br>
+        <br>
+        <label class='Meals'>Meals:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='Meals' placeholder="" id="meals" name='meals' style="Text-align:center;">
+        <br>
+        <br>
+        <label class='TotalEst'>Total Estimate:</label>&nbsp;&nbsp;&nbsp;
+        <input type='Currency' placeholder="$ / R " dir='ltr' id="totalEst" name='totalEst'>
+        <br>
+        <br>
+
+        <p> Includes customer visit ? <input type="checkbox" id='check1' name="check1"></p>
+        <br>
+        <h3 class="PayMethod" style="text-align:left; ">Payment-method used</h3>
+        <br>
+
+        <label for='cash' id='cash'>Cash</label>
+        <input type="radio" id='rad1' name='rad1'><br><br>
+
+        <label for='credit' class='credit'>credit Card</label>
+        <input type="radio" id='rad2' name='rad2'><br>
+        <br>
+        <label for='PayMethod' class='PayMethod'>Check</label>
+        <input type="radio" id='rad3' name='rad3'>
+        <br>
+        <br>
+        <br>
+        <textarea id='comment' name='comment' style="height:20%;" scroll=true></textarea>
+        <br>
+        <br>
+        <button type="submit" value="SEND" style='color:crimson ;background-color: rgb(255, 230, 0)'>SEND</button>
+
+
+    </form>
+</body>
+
+</html>
