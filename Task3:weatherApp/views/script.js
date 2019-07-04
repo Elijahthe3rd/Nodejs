@@ -15,7 +15,7 @@ if(searchTerm===5 && Number.parserInt(searchTerm)+""===searchTerm){
 function searchWearther(searchTerm){
 	//call getSearchMethod
 	getsearchMethod(searchTerm);
-	//this api return info as json object
+	//this api returns info as json object
 	fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appId}&units=${units}`).then(result=>{
 		return result.json();
 	}).then(result=>{

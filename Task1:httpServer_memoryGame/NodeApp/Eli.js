@@ -27,7 +27,7 @@ function flipCard() {
   checkForMatch();
 }
 
-//function CheckForMatch compares the two flipped cards  are identical to one  another and returns functions based on expression results 
+//function CheckForMatch compares the two flipped cards and returns functions based on expression results 
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 

@@ -14,7 +14,6 @@ app.get('/',(req,res)=>{
 
 });
 
-//app.get(express.static(path.join(__dirname ,'index')));
 
 app.listen(port,()=>{
 

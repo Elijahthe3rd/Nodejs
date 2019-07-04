@@ -42,16 +42,17 @@ var visitorSchema = new mongoose.Schema({
                 // required:true
                 unique:false
             },
+            
 
             assistor:{
                 type:String,
                 // required:true
                 unique:false
             },
-        
+            
             date:{
                 type:Date,
-                default:Date.now,
+                default:Date.now.hours,
                 unique:false
 
                 },
