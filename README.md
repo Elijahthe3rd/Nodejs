@@ -1,11 +1,24 @@
-Task 1: HTTP Sever => rendering Game Template and its linked functions script
+The Project is based or focused on Nodejs Express and Non Sql Database MongoDB
 
-Task 2: Nodejs Forms & Request Handling => intro to data storage using json file
+CRUD => create Read Update and Delete data from MongoDb via Nodejs
 
-Taks 3: Nodejs Weather App => using pug template an js to create interactive web page
+"INSTRUCTION*
+1) git clone http://github.com/Elijahthe3rd/Nodejs.git
 
-Task 4: MongoDb and Express/Nodejs => Creating A Mongo CRUD done with local  
-        database, for database interface i used mongo community compass and 
-        Insomnia due to its extra features of Delete,Update(Put/Patch)
+2) cd into the folder " Nodejs.git "
 
-(NB) All Tasks were submited contained in single folder Named Nodejs Challenges s
+3) install required Dependencies according to how the are specified in package.json
+    Dependencies:
+    =>
+    =>
+    =>
+
+4) To run/debug the project
+   
+   => npm start
+
+    or via auto updating dependency plugin (Nodemon) 
+
+   =>npm run dev
+
+5) (NB) use postman/insomnia instead of chrome or any web-browser 
